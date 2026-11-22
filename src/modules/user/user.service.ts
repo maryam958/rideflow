@@ -23,6 +23,11 @@ export class UserService {
     return this.userRepository.save(user);;
   }
 
+  findByEmail(email: string) {
+    return this.userRepository.findOne({ where: { email } });
+  }
+
+
   findAll() {
     return `This action returns all user`;
   }
