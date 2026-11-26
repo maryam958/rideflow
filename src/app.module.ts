@@ -6,6 +6,7 @@ import { AppService } from './app.service';
 import { UserModule } from './modules/user/user.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { DriverModule } from './modules/driver/driver.module';
+import { VehicleModule } from './modules/vehicle/vehicle.module';
 
 @Module({
   imports: [
@@ -26,6 +27,7 @@ import { DriverModule } from './modules/driver/driver.module';
     UserModule,
     AuthModule,
     DriverModule,
+    VehicleModule,
   ],
   controllers: [AppController],
   providers: [AppService],
